@@ -1,7 +1,8 @@
 {
-  "name": "Disco",
+  "name": "Demo-Application",
   "version": "1.0.0",
   "author": "Avi Flombaum <avi@flombaum.com>",
+  "license": "MIT",
   "dependencies": {
     "autoprefixer": "^10.3.6",
     "postcss": "^8.3.8",

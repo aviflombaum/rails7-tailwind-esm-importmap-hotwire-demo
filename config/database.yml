@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: disco_tailwind_development
+  database: demo_tailwind_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: disco_tailwind
+  #username: demo_tailwind
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: disco_tailwind_test
+  database: demo_tailwind_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: disco_tailwind_production
-  username: disco_tailwind
-  password: <%= ENV["DISCO_TAILWIND_DATABASE_PASSWORD"] %>
+  database: demo_tailwind_production
+  username: demo_tailwind
+  password: <%= ENV["DEMO_TAILWIND_DATABASE_PASSWORD"] %>
